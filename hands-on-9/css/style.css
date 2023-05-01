@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+:root {
+    --color-blue: rgb(20, 20, 100);
+    --margin-base: 1rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.box-40{width: 45%;}
+.box-60{width: 55%;}
+.box {
+    /* height: 80vh; */
+    min-height: 90%;
+    color: var(--color-blue);
+    margin-bottom: var(--margin-base);
+}
+
+.box h2 {
+    font-size: 6vmin;
+    text-align: center;
+    margin: var(--margin-base) 0;
+}
+
+.box p {
+    width: 90%;
+    font-size: 3vmin;
+    margin: var(--margin-base) 0;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 15px; */
+}
+
+.box-form-item {    
+    padding: 0 10px;
+    height: 90px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+}
+
+.box-form-item label {
+    font-size: 18px;  
+    margin-bottom: 0;  
+}
+
+input,
+select {    
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    font-size: 18px;
+    border: 1px solid #20046e;
+}
+
+input:focus,
+select:focus {
+    outline-color: #20046e;
+}
+
+label:not(.radio label, .select) {
+    margin-bottom: 5px;
+    height: 10px;
+    
+}
+
+select {
+    padding-left: 10px;
+}
+
+.icon {
+    position: relative;
+    top: 28px;
+    left: 15px
+}
+
+.box-form-radio {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    outline-color: 1px solid #20046e;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #20046e;
+}
+
+.radio {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    column-gap:  5px;
+}
+
+.box-form-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: var(--margin-base);
+}
+
+.box-form-button button {
+    margin-top: var(--margin-base);
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-blue);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    border: 0;
+    cursor: pointer;
+}
+
+@media(max-width: 1080px) {
+    .container {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box {
+         width: 90%;     
+    }
+
+    .box p {
+        width: 100%;
+    }  
+}
+
+@media(max-width: 880px) {    
+    .box-form-item {
+        width: 100%;
+    }
+}
