@@ -1,0 +1,93 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --bg-blue-1: #11429e;
+    --bg-blue-2: #F6F9FF;
+    --bg-blue-3: #6583b9;
+    --margin-top: 100px;
+}
+
+button:focus {
+    box-shadow: 0;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    color: var(--bg-blue-1);
+    font-weight: 800;
+}
+
+.logo-icon {
+    color: var(--bg-blue-1);
+}
+
+.my-mt {
+    margin-top: var(--margin-top);
+}
+
+.nav-item a {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.my-title {
+    color: var(--bg-blue-1);
+    font-weight: 700;
+
+}
+
+.bg-blue-2 {
+    background-color: var(--bg-blue-2);
+}
+
+.sobre {
+    min-height: 75vh;
+}
+
+
+.icon {
+    font-size: 60px;
+    color: var(--bg-blue-1);
+    margin: 24px 0;
+    transition: .5s;
+}
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    background-color: var(--bg-blue-2);
+}
+
+.card:hover .icon {
+    transform: scale(1.5);
+}
+
+.icon-social,
+.icon-contato {
+    font-size: 2rem;
+    color: var(--bg-blue-1);
+    transition: .5s;
+}
+
+.icon-social:hover {
+    color: var(--bg-blue-3);
+}
+textarea {
+    resize: none;
+    height: 130px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+
+@media(max-width:959px) {
+    #sobre{
+        text-align: center;
+    }
+}

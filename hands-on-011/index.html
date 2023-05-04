@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hands-on-011</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Minha CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <!-- header da página -->
+    <header class="container mt-3 mb-5">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand logo-text" href="#"><i class="fa-solid fa-table-cells logo-icon"></i>
+                   Projeto Web</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-align-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#valores">Valores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#solucoes">Soluções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#equipe">Equipe </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Cases
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#caseModal1">Case 1</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#caseModal1">Case 2</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#caseModal1">Case 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-------------------------------------- sobre -------------------------------------->
+    <section class="container sobre my-5" id="sobre">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-6">
+                <h2 class="my-title display-5 my-4">Soluções modernas para o crescimento da sua empresa</h2>
+                <h3 class="mb-4">Somos uma equipe de desenvolvedores talentosos criando projetos inovadores</h3>
+                <a href="" class="btn btn-primary btn-lg">Mais informações <i
+                        class="fa-solid fa-arrow-right-long ms-1"></i></a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="./images/Team building _Monochromatic.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- fim sobre - ------------------------------------->
+
+    <!-------------------------------------- valores -------------------------------------->
+    <section class="container my-5" id="valores">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-6 bg-blue-2 my-2">
+                <h4 class="my-1 my-title mt-4">Valores</h4>
+                <h4 class="my-title my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas assumenda
+                    error veniam maiores provident reiciendis.</h4>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem obcaecati culpa
+                    quis et numquam omnis autem facere excepturi corrupti neque illo tenetur aperiam ea, quasi ex ut
+                    nobis! Aliquam, atque?</p>
+                <a href="" class="btn btn-primary btn-lg text-light mb-5">Conheça agora <i
+                        class="fa-solid fa-arrow-right-long ms-1"></i></a>
+            </div>
+            <div class="col-lg-6 text-center my-2">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/carousel/pexels-cottonbro-studio-7437489.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel/pexels-christina-morillo-1181610.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="./images/carousel/pexels-thirdman-5257759.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- fim valores -------------------------------------->
+
+    <!----------------------------------- solucoes -------------------------------------->
+    <section class="container my-5" id="solucoes">
+        <h4 class="my-title text-center my-mt">Soluções</h4>
+        <h3 class="text-center my-title mb-4">Veja o que podemos fazer por sua empresa</h3>
+
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-shield-halved icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+                            tempora enim veritatis at similique, dolor modi quia illo dolore culpa?</p>
+                        <a href="#" class="btn btn-outline-primary">Mais informações</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-code icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+                            tempora enim veritatis at similique, dolor modi
+                            quia illo dolore culpa?</p>
+                        <a href="#" class="btn btn-primary">Mais informações</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-database icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+                            tempora enim veritatis at similique, dolor modi
+                            quia illo dolore culpa?</p>
+                        <a href="#" class="btn btn-primary">Mais informações</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-coins icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+                            tempora enim veritatis at similique, dolor modi
+                            quia illo dolore culpa?</p>
+                        <a href="#" class="btn btn-primary">Mais informações</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-building-shield icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+                            tempora enim veritatis at similique, dolor modi
+                            quia illo dolore culpa?</p>
+                        <a href="#" class="btn btn-primary">Mais informações</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 my-2">
+                <div class="card text-center p-4">
+                    <i class="fa-solid fa-diagram-project icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+                            tempora enim veritatis at similique, dolor modi
+                            quia illo dolore culpa?</p>
+                        <a href="#" class="btn btn-primary">Mais informações</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-------------------------------- fim solucoes -------------------------------------->
+
+
+
+    <!----------------------------------- equipe -------------------------------------->
+    <section class="container mb-5" id="equipe">
+        <h4 class="my-title text-center my-mt">Equipe</h4>
+        <h3 class="text-center my-title mb-4">Esse é o nosso time</h3>
+
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="./images/equipe/liza-cagle-nuyCCp8jleU-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="my-title my-3">Liza</h4>
+                        <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni libero
+                            fugit sint!.</p>
+                        <div class="mt-5">
+                            <a href=""><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-github icon-social mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter icon-social mx-2"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="./images/equipe/joel-mott-YU2cDEikESw-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="my-title my-3">Joel</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni libero
+                            fugit sint!.</p>
+                        <div class="mt-5">
+                            <a href=""><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-github icon-social mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter icon-social mx-2"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="./images/equipe/paul-visuals-PFC2fY9LE_g-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="my-title my-3">Paul</h4>
+                        <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni libero
+                            fugit sint!.</p>
+                        <div class="mt-5">
+                            <a href=""><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-github icon-social mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter icon-social mx-2"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-2">
+                <div class="card text-center">
+                    <img src="./images/equipe/christina-wocintechchat-com-dZVU-OYzOi0-unsplash.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h4 class="my-title my-3">Christina</h4>
+                        <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni libero
+                            fugit sint!.</p>
+                        <div class="mt-5">
+                            <a href=""><i class="fa-brands fa-linkedin icon-social mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-github icon-social mx-2"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter icon-social mx-2"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------- fim equipe -------------------------------------->
+
+    <!----------------------------------  modal ---------------------------------------->
+
+    <!-- Case Padrão -->
+    <div class="modal fade" id="caseModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Empresa ABC</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="mb-3">Descrição do projeto</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ut suscipit praesentium id
+                        cum maiores quod assumenda quibusdam! Tempore at nesciunt minima! Beatae veniam omnis, ipsa
+                        similique vitae deleniti facere accusantium doloremque, veritatis dolorum itaque fuga debitis
+                        sint eaque voluptatum. Placeat similique et beatae reiciendis deleniti vel. Mollitia deserunt
+                        rem ut corrupti voluptatibus nihil porro fuga obcaecati, molestias ducimus repellendus saepe
+                        provident maiores, ab molestiae aut ratione assumenda? Nisi excepturi, inventore cum architecto
+                        expedita accusamus alias officiis sint dicta voluptatum consequuntur voluptates quasi in
+                        corporis adipisci magnam nulla error omnis deleniti fuga. Cumque, culpa veritatis ab quis porro
+                        neque incidunt quisquam dolore quasi omnis placeat maxime delectus earum quaerat ducimus maiores
+                        dignissimos quae vero eveniet a, consequatur explicabo laboriosam libero?
+                    </p>
+
+                    <h2>Soluções desenvolvidas</h2>
+                    <div class="row my-4">
+                        <div class="col-3">
+                            <img src="./images/case-modal/pexels-dan-nelson-3949101.jpg" alt="Aplicativo 01"
+                                class="img-fluid rounded-1">
+                        </div>
+                        <div class="col-3">
+                            <img src="./images/case-modal/pexels-photomix-company-242492.jpg" alt="Aplicativo 02"
+                                class="img-fluid rounded-1">
+                        </div>
+                        <div class="col-3">
+                            <img src="./images/case-modal/pexels-pixabay-159435.jpg" alt="Aplicativo 03"
+                                class="img-fluid rounded-1">
+                        </div>
+                        <div class="col-3">
+                            <img src="./images/case-modal/pexels-torsten-dettlaff-54284.jpg" alt="Aplicativo 04"
+                                class="img-fluid rounded-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------- fim modal Padrão ----------------------------------->
+
+    <!-------------------------------------- contato -------------------------------------->
+    <section class="container-fluid bg-blue-2 mt-5 " id="contato">
+        <div class="container py-5">
+            <h4 class="my-title text-center">Contato</h4>
+            <h3 class="text-center my-title mb-4">Veja como você pode falar conosco</h3>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-location-dot icon-contato"></i>
+                            </p>
+                            <h3>Endereço</h3>
+                            <p>
+                                Av. Lins de Vasconcelos, 1222 <br>
+                                São Paulo - SP
+                            </p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-phone icon-contato"></i>
+                            </p>
+                            <h3>Telefone</h3>
+                            <p>(11) 3385-8010 <br>
+                                (11) 98170-0028</p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-envelope icon-contato"></i>
+                            </p>
+                            <h3>Email</h3>
+                            <p>
+                                helpcenter@fiap.com.br <br>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-clock icon-contato"></i>
+                            </p>
+                            <h3>Atendimento</h3>
+                            <p>
+                                Segunda - Sexta <br>
+                                08:00 - 21:00
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="">
+                        <div class="row text-start">
+                            <div class="col-lg-6 my-3">
+                                <label for="nome" class="form-label">Seu nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="email" class="form-label">Seu email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Seu nome">
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="fone" class="form-label">Seu Telefone</label>
+                                <input type="tel" class="form-control" id="fone" placeholder="(xx) 9999-9999">
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="mensagem" class="form-label">Assunto</label>
+                                <input type="text" class="form-control" id="mensagem" placeholder="Assunto">
+                            </div>
+
+                            <div class="col-lg-12 my-2">
+                                <label for="nome" class="form-label">Mensagem</label>
+                                <textarea name="mensagem" id="mensagemm" placeholder="Sua mensagem"
+                                    class="form-control"></textarea>
+                            </div>
+
+                            <div class="col-lg-12 my-2 d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------- fim contato -------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
